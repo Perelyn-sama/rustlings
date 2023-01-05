@@ -12,11 +12,7 @@
 
 // Put your function here!
 pub fn calculate_price_of_apples(amount_of_apples: i32) -> i32 {
-    if amount_of_apples > 40 {
-        let cost: i32 = amount_of_apples;
-        return cost
-    }
-    let cost: i32 = amount_of_apples * 2;
+    let cost: i32 = if amount_of_apples > 40 {amount_of_apples} else {amount_of_apples * 2};
     cost
 }
 
